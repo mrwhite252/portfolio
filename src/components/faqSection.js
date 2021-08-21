@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { About } from "../style";
+import Toggle from "./toggle";
 
 const FaqSection = () => {
   return (
@@ -8,17 +9,20 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How Do I start?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-            ullam suscipit. Perferendis facilis id sed.
-          </p>
+
+      <Toggle>
+        <div className="question">
+          <h4>How Do I start?</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, ullam suscipit. Perferendis facilis id sed.
+            </p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
+      </Toggle>
       <div className="question">
         <h4>Daily Schedule</h4>
         <div className="answer">
